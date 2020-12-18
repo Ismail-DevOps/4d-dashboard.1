@@ -1,0 +1,63 @@
+#mainPic {
+    background-image: url(../../../../assets/topbackpic.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+@import url('http://fonts.cdnfonts.com/css/kollektif');
+body {
+    margin: 0;
+    font-family: "Kollektif";
+                            
+                
+}
+.header3 {
+    font-size: 90px;
+    color: white;
+    font-weight: 800;
+}
+.subHeader {
+    font-size: 27px;
+    color: white;
+    font-weight: 500;
+    margin-top: 10px;
+
+}
+.btnLogin {
+    color: white !important;
+    background-color: #F8C000 !important;
+    padding: 10px 40px !important;
+    width: 250px;
+    height: 65px;
+    font-size: 20px !important;
+    border-radius: 10px !important;
+}
+.btnSignup {
+    color: white !important;
+    background-color: #129FD2 !important;
+    padding: 10px 40px !important;
+    width: 250px;
+    height: 65px;
+    font-size: 20px !important;
+    border-radius: 10px !important;
+
+}
+p {
+    margin: 0;
+}
+@media screen and (max-width:600px) {
+    #mainPic {
+        background-image: url(../../../../assets/juliane-mobile.png);
+        background-position: left;
+    }
+    .header3 {
+        font-size: 45px;
+    }   
+    .subHeader {
+        font-size: 22px;
+    }
+    #mainPic {
+        justify-content: center;
+    }
+}

@@ -1,105 +1,21 @@
-import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import Toolbar from "@material-ui/core/Toolbar";
-import Typography from "@material-ui/core/Typography";
-import Button from "@material-ui/core/Button";
-import IconButton from "@material-ui/core/IconButton";
-import MenuIcon from "@material-ui/icons/Menu";
-import Grid from "@material-ui/core/Grid";
-import "../../../../App.css";
+import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
+import Grid from '@material-ui/core/Grid';
+import '../../../../App.css';
 import PropTypes from 'prop-types';
-import ShareIcon from '@material-ui/icons/Share';
-import RadioButtonUncheckedIcon from "@material-ui/icons/RadioButtonUnchecked";
-import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
-import ChevronRightIcon from '@material-ui/icons/ChevronRight';
-import "../../../../App.css";
-import AppBar from "@material-ui/core/AppBar";
-import Tabs from "@material-ui/core/Tabs";
-import Tab from "@material-ui/core/Tab";
-import Box from "@material-ui/core/Box";
 
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1,
-    width: "100%",
-    color:'rgb(134, 113, 95)',
-    backgroundColor: theme.palette.background.paper
-  },
-  menuButton: {
-    marginRight: theme.spacing(2)
-  },
-  title: {
-    flexGrow: 1
-  },
-  Restaurant: {
-    fontSize:'16px',
-    fontFamily: 'Montserrat',
-    fontWeight:'bolder !important',
-    fontStyle:'normal',
+    width: '100%',
     color: 'rgb(134, 113, 95)',
-    letterSpacing: '2.3px',
-  },
-  
+    backgroundColor: theme.palette.background.paper
+  }
 }));
 
 const Topbar = props => {
   const { className, onSidebarOpen, ...rest } = props;
-  const classes = useStyles();
-  const [value, setValue] = React.useState(0);
-
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
-
-  return (
-    <Grid container xs={12} align='center'>
-      <AppBar style={{position:'static'}}>
-        <toolbar>
-      <Grid container xs={12} justify='space-between' style={{paddingTop:'4vh',background:'rgb(248, 243, 239)'}}>
-        <Grid item xs={2}>
-          <Typography style={{marginLeft:'-2vh',fontSize:'14px',color:'rgb(134, 113, 95)',fontFamily:'Montserrat'}}>
-            ENG
-          </Typography>
-        </Grid>
-        <Grid item xs={5} style={{}} align='left'>
-          <Typography className={classes.Restaurant} style={{paddingLeft:'1vh'}}>
-            RESTAURANT
-          </Typography>
-        </Grid>
-        <Grid item xs={2} style={{marginTop:'-1.5vh',paddingLeft:'2vh'}} align='left'>
-          <IconButton>
-            <ShareIcon style={{fontSize:'20px',color:'rgb(134, 113, 95)',marginRight:'0vh'}}/>
-          </IconButton>
-        </Grid>
-        <div className={classes.root} style={{marginTop:'4vh'}}>
-        <toolbar position="static" style={{background:"rgb(248, 243, 239)",marginTop:'2vh'}} >
-        <Tabs
-        style={{background:'rgb(248, 243, 239)'}}
-          value={value}
-          onChange={handleChange}
-          variant="scrollable"
-          scrollButtons="on"
-          indicatorColor="primary"
-          
-          indicatorColor="rgb(134, 113, 95)"
-          centered = "true"
-          aria-label="scrollable force tabs example"
-        >
-          <Tab label="DRINKS" style={{width:'100px',paddingLeft:'1vh',paddingRight:'7vh'}} />
-          <Tab label="PIZZA" style={{width:'100px',paddingRight:'4vh'}} />
-          <Tab label="BURGER" style={{width:'100px'}} />
-          <Tab label="DESSERT" style={{width:'100px',paddingRight:'6vh'}} />
-          <Tab label="FISH" style={{width:'100px',paddingRight:'4vh'}} />
-          <Tab label="STEAK" style={{width:'100px'}} />
-        </Tabs>
-      </toolbar>
-      </div>
-      </Grid>
-      </toolbar>
-      
-      </AppBar>
-    </Grid>
-  );
+  return <Grid container xs={12} align="center"></Grid>;
 };
 
 Topbar.propTypes = {
