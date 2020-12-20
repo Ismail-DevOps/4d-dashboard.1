@@ -12,6 +12,40 @@ body {
                             
                 
 }
+.header {
+    font-weight: 700;
+    font-size: 75px;
+    margin: 30px 0;
+    color: #000;
+}
+.contentText {
+    font-size: 17px;
+    color: #000;
+    font-weight: 500;
+}
+.contentHeader {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+}
+.contact {
+    font-size: 30px;
+    color: #000;
+    text-decoration: underline;
+}
+.header2 {
+    font-weight: 700;
+    font-size: 70px;
+    margin: 30px 0;
+    color: #129FD2;
+}
+.headersubHeader {
+    font-weight: 500;
+    font-size: 24px;
+    color: #000;
+    margin-bottom: 30px;
+}
 .header3 {
     font-size: 90px;
     color: white;
@@ -46,6 +80,23 @@ body {
 p {
     margin: 0;
 }
+.header {
+    font-weight: 700;
+    font-size: 70px;
+    margin: 30px 0;
+    color: #000;
+}
+.contentText {
+    font-size: 17px;
+    color: #000;
+    font-weight: 500;
+}
+.contentHeader {
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 10px;
+}
 @media screen and (max-width:600px) {
     #mainPic {
         background-image: url(../../../../assets/juliane-mobile.png);
@@ -54,10 +105,53 @@ p {
     .header3 {
         font-size: 45px;
     }   
+    .header {
+        font-size: 50px;
+    }
+    /* #mainWrap {
+        height: 85vh !important;
+    } */
     .subHeader {
         font-size: 22px;
     }
     #mainPic {
         justify-content: center;
     }
+    #mainWrap {
+        height: unset !important;
+    }
+    .header {
+        font-size: 50px;
+    }
+    /* #mainWrap {
+        height: 85vh !important;
+    } */
+    #mainWrap {
+        align-content: unset !important;
+    }
+    #textWrap {
+        padding-top: 60px !important;
+    }
+    .content {
+        font-size: 18px;
+        letter-spacing: 0px;
+    }
+    #imgWrap {
+        height: unset !important;
+    }
+}
+#sidepicChild {
+    background-image: url(../../../../assets/Untitled\ design\ 1.png);
+}
+.header1 {
+    font-weight: 600;
+    color: #f8c000;
+    font-size: 50px;
+}
+.content {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 1.8;
+    margin-top: 30px;
+    letter-spacing: 2px;
 }

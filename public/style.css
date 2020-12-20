@@ -1,0 +1,9 @@
+@import url('./Kollektif.ttf');
+body {
+    font-family: myFont, sans-serif !important;
+                                                
+}
+@font-face {
+    font-family: myFont;
+    src: url(Kollektif.ttf);
+ }
