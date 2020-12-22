@@ -1,8 +1,8 @@
 #mainPic {
-    background-image: url(../../../../assets/topbackpic.png);
+    background-image: url(../../../../assets/juliane-mobil.png);
     background-repeat: no-repeat;
     width: 100%;
-    background-position: center;
+    /* background-position: center; */
     background-size: cover;
 }
 @import url('http://fonts.cdnfonts.com/css/kollektif');
@@ -36,7 +36,7 @@ body {
 }
 .header2 {
     font-weight: 700;
-    font-size: 70px;
+    font-size: 50px;
     margin: 30px 0;
     color: #129FD2;
 }
@@ -50,6 +50,7 @@ body {
     font-size: 90px;
     color: white;
     font-weight: 800;
+    margin-top: 22vh;
 }
 .subHeader {
     font-size: 27px;
@@ -61,21 +62,22 @@ body {
 .btnLogin {
     color: white !important;
     background-color: #F8C000 !important;
-    padding: 10px 40px !important;
-    width: 250px;
-    height: 65px;
+    padding: 10px 20px !important;
+    width: 220px;
+    height: 55px;
     font-size: 20px !important;
     border-radius: 10px !important;
+    margin-top: 20vh !important;
 }
 .btnSignup {
     color: white !important;
     background-color: #129FD2 !important;
-    padding: 10px 40px !important;
-    width: 250px;
-    height: 65px;
+    padding: 10px 20px !important;
+    width: 220px;
+    height: 55px;
     font-size: 20px !important;
     border-radius: 10px !important;
-
+    margin-top: 5vh !important;
 }
 p {
     margin: 0;
@@ -97,7 +99,7 @@ p {
     color: #000;
     margin-bottom: 10px;
 }
-@media screen and (max-width:600px) {
+@media screen and (max-width:1924px) {
     #mainPic {
         background-image: url(../../../../assets/juliane-mobile.png);
         background-position: left;
@@ -113,6 +115,10 @@ p {
     } */
     .subHeader {
         font-size: 22px;
+    }
+    #contactPic {
+        height: auto;
+        margin-top: 50px;
     }
     #mainPic {
         justify-content: center;
@@ -130,7 +136,7 @@ p {
         align-content: unset !important;
     }
     #textWrap {
-        padding-top: 60px !important;
+        padding-top: 20px !important;
     }
     .content {
         font-size: 18px;
@@ -139,6 +145,17 @@ p {
     #imgWrap {
         height: unset !important;
     }
+    #desktop {
+        display: none !important;
+    }
+    #mainPic {
+        background-image: url(../../../../assets/juliane-mobil.png);
+        background-repeat: no-repeat;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+    }
+   
 }
 #sidepicChild {
     background-image: url(../../../../assets/Untitled\ design\ 1.png);
@@ -154,4 +171,67 @@ p {
     line-height: 1.8;
     margin-top: 30px;
     letter-spacing: 2px;
+}
+@media screen and (max-width:1200px) {
+    .familyWrap {
+        height: 70vh !important;
+    }
+}
+@media screen and (max-width:986px) and (min-width:600px) {
+    .familyWrap {
+        height: 100vh !important;
+    }
+    .benefitsWrap {
+        height: 70vh !important;
+    }
+}
+@media screen and (max-width:600px) {
+    #mainPic {
+        background-image: url(../../../../assets/topbackpicmobile.png);
+        background-repeat: no-repeat;
+        width: 100%;
+        background-position: center;
+        background-size: unset;
+        justify-content: flex-end;
+        background-position-y: inherit;
+        height: 80vh !important;
+    }
+    .btnLogin {
+        color: white !important;
+        background-color: #F8C000 !important;
+        padding: 10px 20px !important;
+        width: 220px;
+        height: 55px;
+        font-size: 20px !important;
+        border-radius: 10px !important;
+        margin-top: 20vh !important;
+    }
+    .btnSignup,.btnLogin {
+        padding: 10px 15px !important;
+        width: 160px;
+        height: 50px;
+        font-size: 15px !important;
+        
+    }   
+    #marginIcon {
+        margin-left: 10px !important;
+    }
+    #btnWraps {
+        margin-top: -50px;
+    }
+    .header3  {
+        margin-top: 15vh;
+        font-size: 40px;
+    }
+    .subHeader {
+        font-size: 15px;
+        line-height: 1.5;
+        margin-top: 20px;
+    }
+    .header1,.header2,.header {
+        font-size: 40px;
+    }
+    #mainWrap {
+        padding: 0 !important;
+    }
 }

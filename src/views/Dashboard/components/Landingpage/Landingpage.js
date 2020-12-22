@@ -15,35 +15,21 @@ class Landingpage extends React.Component {
 
     return (
       <Grid container xs={12}>
-        <Grid
-          container
-          xs={12}
-          id="mainPic"
-          style={{ height: '100vh', alignContent: 'center' }}>
+        <Grid container xs={12} id="mainPic" style={{ height: '100vh' }}>
           <Grid item lg={6} md={5} sm={3} xs={0} />
-          <Grid
-            container
-            lg={6}
-            md={7}
-            sm={9}
-            xs={10}
-            align="left"
-            style={{
-              minHeight: '70vh',
-              maxHeight: '80vh',
-              height: 'min-content'
-            }}>
+          <Grid item lg={6} md={7} sm={9} xs={8} align="left">
             <Grid item xs={12}>
               <p className="header3">match parrot</p>
               <p className="subHeader">AU PAIR AND HOST FAMILY MATCH & CHAT</p>
             </Grid>
-            <Grid container xs={12}>
+            <Grid item xs={12} id="btnWraps">
               <Grid item xs={12}>
                 <Button className="btnLogin">
                   <Grid container xs={12} style={{ alignItems: 'center' }}>
                     <p>LOGIN</p>
                     <ArrowRightAltIcon
-                      style={{ marginLeft: '55px', fontSize: '45px' }}
+                      id="marginIcon"
+                      style={{ marginLeft: '45px', fontSize: '45px' }}
                     />
                   </Grid>
                 </Button>
@@ -58,7 +44,8 @@ class Landingpage extends React.Component {
                     }}>
                     <p>SIGNUP</p>
                     <ArrowRightAltIcon
-                      style={{ marginLeft: '40px', fontSize: '45px' }}
+                      id="marginIcon"
+                      style={{ marginLeft: '35px', fontSize: '45px' }}
                     />
                   </Grid>
                 </Button>
@@ -69,6 +56,7 @@ class Landingpage extends React.Component {
         <Grid
           container
           xs={12}
+          className="familyWrap"
           id="mainWrap"
           style={{ height: '100vh', alignContent: 'center' }}>
           <Grid
@@ -79,7 +67,7 @@ class Landingpage extends React.Component {
             xs={12}
             align="center"
             id="textWrap"
-            style={{ paddingTop: '120px', justifyContent: 'center' }}>
+            style={{ justifyContent: 'center', alignSelf: 'center' }}>
             <p className="header1">find your next family</p>
             <Grid item lg={9} xs={11}>
               <p className="content">
@@ -104,18 +92,27 @@ class Landingpage extends React.Component {
             />
           </Grid>
         </Grid>
-        <Grid container xs={12} id="mainWrap" style={{ height: '100vh' }}>
+        <Grid
+          container
+          xs={12}
+          id="mainWrap"
+          className="benefitsWrap"
+          style={{ height: '100vh' }}>
           <Grid item xs={12} align="center">
             <p className="header2">the benefits</p>
             <p className="headersubHeader">What are we about?</p>
-            <img width="100%" src={require('../../../../assets/Group 1.png')} />
+            <img
+              width="100%"
+              style={{ cursor: 'pointer' }}
+              src={require('../../../../assets/Group 1.png')}
+            />
           </Grid>
         </Grid>
         <Grid
           container
           xs={12}
           id="mainWrap"
-          style={{ height: '100vh', alignSelf: 'center' }}>
+          style={{ padding: '60px 0', alignSelf: 'center' }}>
           <Grid
             item
             lg={4}
@@ -226,6 +223,7 @@ class Landingpage extends React.Component {
               xs={12}
               style={{ textAlign: '-webkit-center', alignSelf: 'center' }}>
               <img
+                id="contactPic"
                 width="100%"
                 height="500px"
                 src={require('../../../../assets/Untitled design (6) 1.png')}
@@ -241,7 +239,7 @@ class Landingpage extends React.Component {
                 textAlign: '-webkit-center',
                 alignSelf: 'center'
               }}>
-              <Grid item lg={8} md={9} sm={10} xs={10}>
+              <Grid item lg={7} md={9} sm={10} xs={10}>
                 <p className="header">contact us</p>
                 <p className="contact">hello@matchparrot.com</p>
               </Grid>
