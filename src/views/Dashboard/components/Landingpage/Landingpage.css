@@ -50,13 +50,13 @@ body {
     font-size: 90px;
     color: white;
     font-weight: 800;
-    margin-top: 22vh;
+    margin-top: 16vh;
 }
 .subHeader {
     font-size: 27px;
     color: white;
     font-weight: 500;
-    margin-top: 10px;
+    margin-top: 20px;
 
 }
 .btnLogin {
@@ -104,18 +104,18 @@ p {
         background-image: url(../../../../assets/juliane-mobile.png);
         background-position: left;
     }
-    .header3 {
+    /* .header3 {
         font-size: 45px;
-    }   
+    }    */
     .header {
         font-size: 50px;
     }
     /* #mainWrap {
         height: 85vh !important;
     } */
-    .subHeader {
+    /* .subHeader {
         font-size: 22px;
-    }
+    } */
     #contactPic {
         height: auto;
         margin-top: 50px;
