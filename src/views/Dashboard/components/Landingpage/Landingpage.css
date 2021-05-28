@@ -1,237 +1,81 @@
-#mainPic {
-    background-image: url(../../../../assets/juliane-mobil.png);
-    background-repeat: no-repeat;
-    width: 100%;
-    /* background-position: center; */
-    background-size: cover;
+.signup-btn {
+    background-color: #004289 !important;
+    color: white !important;
+    font-size: 10px !important;
+    text-transform: lowercase;
+    padding: 10px 18px !important;  
 }
-@import url('http://fonts.cdnfonts.com/css/kollektif');
+.navigation-div {
+    align-content: center;
+    justify-content: center;
+}
+.navigation {
+    color: #6a737c;
+    font-size: 18px;
+    font-weight: 600;
+}
+.headerFirst {
+    color: #48535f;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 1.5;
+}
+.headerContent {
+    color: #9da8b8;
+    font-size: 18px;
+    line-height: 1.8;
+    margin-top: -12px;
+}
+.sideHeader {
+    color: #4f5965;
+    font-size: 25px;
+}
+.sideContent {
+    color: #8e9caf;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+.footer {
+    background-color: #404f57;
+}
+.footerNavigation {
+    color: white;
+    line-height: 2;
+}
+.subscribe-btn {
+    background-color: white !important;
+    border-radius: 10px !important;
+    height: 55px;
+    margin-left: 15px !important;
+    padding: 10px 30px !important;
+    color: #404f57 !important;
+    font-weight: 600 !important; 
+}
+.footerHeader {
+    color: white;
+    font-size: 20px;
+}
 body {
-    margin: 0;
-    font-family: "Kollektif";
-                            
-                
+    margin: 0
 }
-.header {
-    font-weight: 700;
-    font-size: 75px;
-    margin: 30px 0;
-    color: #000;
+.MuiOutlinedInput-notchedOutline, .MuiFormLabel-root {
+    color: white !important;
+    border-color: white !important;
 }
-.contentText {
-    font-size: 17px;
-    color: #000;
-    font-weight: 500;
+.navigation {
+    text-align: center;
 }
-.contentHeader {
-    font-size: 20px;
-    font-weight: bold;
-    color: #000;
-    margin-bottom: 10px;
-}
-.contact {
-    font-size: 30px;
-    color: #000;
-    text-decoration: underline;
-}
-.header2 {
-    font-weight: 700;
-    font-size: 50px;
-    margin: 30px 0;
-    color: #129FD2;
-}
-.headersubHeader {
-    font-weight: 500;
-    font-size: 24px;
-    color: #000;
-    margin-bottom: 30px;
-}
-.header3 {
-    font-size: 90px;
-    color: white;
-    font-weight: 800;
-    margin-top: 16vh;
-}
-.subHeader {
-    font-size: 27px;
-    color: white;
-    font-weight: 500;
-    margin-top: 20px;
 
-}
-.btnLogin {
-    color: white !important;
-    background-color: #F8C000 !important;
-    padding: 10px 20px !important;
-    width: 220px;
-    height: 55px;
-    font-size: 20px !important;
-    border-radius: 10px !important;
-    margin-top: 20vh !important;
-}
-.btnSignup {
-    color: white !important;
-    background-color: #129FD2 !important;
-    padding: 10px 20px !important;
-    width: 220px;
-    height: 55px;
-    font-size: 20px !important;
-    border-radius: 10px !important;
-    margin-top: 5vh !important;
-}
-p {
-    margin: 0;
-}
-.header {
-    font-weight: 700;
-    font-size: 70px;
-    margin: 30px 0;
-    color: #000;
-}
-.contentText {
-    font-size: 17px;
-    color: #000;
-    font-weight: 500;
-}
-.contentHeader {
-    font-size: 20px;
-    font-weight: bold;
-    color: #000;
-    margin-bottom: 10px;
-}
-@media screen and (max-width:1924px) {
-    #mainPic {
-        background-image: url(../../../../assets/juliane-mobile.png);
-        background-position: left;
-    }
-    /* .header3 {
-        font-size: 45px;
-    }    */
-    .header {
-        font-size: 50px;
-    }
-    /* #mainWrap {
-        height: 85vh !important;
-    } */
-    /* .subHeader {
-        font-size: 22px;
-    } */
-    #contactPic {
-        height: auto;
-        margin-top: 50px;
-    }
-    #mainPic {
-        justify-content: center;
-    }
-    #mainWrap {
-        height: unset !important;
-    }
-    .header {
-        font-size: 50px;
-    }
-    /* #mainWrap {
-        height: 85vh !important;
-    } */
-    #mainWrap {
-        align-content: unset !important;
-    }
-    #textWrap {
-        padding-top: 20px !important;
-    }
-    .content {
-        font-size: 18px;
-        letter-spacing: 0px;
-    }
-    #imgWrap {
-        height: unset !important;
-    }
-    #desktop {
+@media screen and (max-width:600px) {
+    
+    .hide-xs {
         display: none !important;
     }
-    #mainPic {
-        background-image: url(../../../../assets/juliane-mobil.png);
-        background-repeat: no-repeat;
-        width: 100%;
-        background-position: center;
-        background-size: cover;
-    }
-   
 }
-#sidepicChild {
-    background-image: url(../../../../assets/Untitled\ design\ 1.png);
-}
-.header1 {
-    font-weight: 600;
-    color: #f8c000;
-    font-size: 50px;
-}
-.content {
-    font-weight: bold;
-    font-size: 22px;
-    line-height: 1.8;
-    margin-top: 30px;
-    letter-spacing: 2px;
-}
-@media screen and (max-width:1200px) {
-    .familyWrap {
-        height: 70vh !important;
-    }
-}
-@media screen and (max-width:986px) and (min-width:600px) {
-    .familyWrap {
-        height: 100vh !important;
-    }
-    .benefitsWrap {
-        height: 70vh !important;
-    }
-}
-@media screen and (max-width:600px) {
-    #mainPic {
-        background-image: url(../../../../assets/topbackpicmobile.png);
-        background-repeat: no-repeat;
-        width: 100%;
-        background-position: center;
-        background-size: unset;
-        justify-content: flex-end;
-        background-position-y: inherit;
-        height: 80vh !important;
-    }
-    .btnLogin {
-        color: white !important;
-        background-color: #F8C000 !important;
-        padding: 10px 20px !important;
-        width: 220px;
-        height: 55px;
-        font-size: 20px !important;
-        border-radius: 10px !important;
-        margin-top: 20vh !important;
-    }
-    .btnSignup,.btnLogin {
-        padding: 10px 15px !important;
-        width: 160px;
-        height: 50px;
-        font-size: 15px !important;
-        
-    }   
-    #marginIcon {
-        margin-left: 10px !important;
-    }
-    #btnWraps {
-        margin-top: -50px;
-    }
-    .header3  {
-        margin-top: 15vh;
-        font-size: 40px;
-    }
-    .subHeader {
-        font-size: 15px;
-        line-height: 1.5;
-        margin-top: 20px;
-    }
-    .header1,.header2,.header {
-        font-size: 40px;
-    }
-    #mainWrap {
-        padding: 0 !important;
+@media screen and (max-width:500px) {
+    .subscribe-btn {
+        margin-top: 20px !important;
+        margin-left: 0px !important;
     }
 }

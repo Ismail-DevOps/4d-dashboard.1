@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import clsx from 'clsx';
 import { makeStyles, useTheme } from '@material-ui/styles';
-import { useMediaQuery } from '@material-ui/core';
-import '../../App.css';
 import { Sidebar, Topbar, Footer } from './components';
 
 const useStyles = makeStyles(theme => ({

@@ -1,14 +1,10 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/styles';
 import { Grid } from '@material-ui/core';
-import "../../App.css"
-import {
-  Landingpage  
-} from './components';
+import { Landingpage } from './components';
 
 const useStyles = makeStyles(theme => ({
-  root: {
-  }
+  root: {}
 }));
 
 const Dashboard = () => {
@@ -16,8 +12,7 @@ const Dashboard = () => {
 
   return (
     <div style={{}}>
-    <Landingpage/>
-    
+      <Landingpage />
     </div>
   );
 };
